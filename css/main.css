@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
+.main{
+    background: linear-gradient(180deg, #0C4C7B -100%, #1E2F40 100%);
+}
+
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+
+    /* делаем с колонки - строчку (контейнер содержит два дива)*/
+    display: flex;
+    /* разносим имеющееся содержимое колонок в разные края */
+    justify-content: space-between;
+}
+
+.text{
+    color: #FAF9F9;
+    /* строка подстроилась под заданную ширину, - перенеслась на другую строку */
+    flex: 0 0 580px;
+    padding-top: 170px;
+    padding-bottom: 170px;
+}
+
+h1{
+    font-size: 120px;
+    font-weight: 800px;
+    /* пишем все заглавные буквы */
+    text-transform: uppercase;
+    line-height: 140px;
+    margin-bottom: 40px;
+}
+
+h1 span{
+    color: #FBB731;
+    font-size: 30px;
+    font-weight: 700px;
+    line-height: 38px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 19px;
+    font-weight: 400px;
+    line-height: 26.6px;
+    margin-bottom: 42px;
+}
+
+a{
+    color: #1E2F40;
+    background-color: #FBB731;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px 50px;
+    /* в данном случае в одну линию вертикально */
+    display: inline-block;
+    text-transform: uppercase; 
+    font-size: 14px;
+    font-weight: 700px;
+}
+
+.visual{
+    /* картинка переместилась в левую часть своего окна */
+    flex-grow: 1;
+    /* сдвигаем желтый прямоугольник в право */
+    display: flex;
+    justify-content: flex-end;
+    /* для позиционирования желтого прямоугольника и картинки  */
+    position: relative;
+}
+
+.bg{
+    width: 432px;
+    height: 100%;
+    background: linear-gradient(2.42deg, #F37335 -19.6%, #FBB731 100.79%, #FDC830 100.79%);
+}
+
+img {
+    width: 829PX;
+    /* картинка накладывается на жолтый фон */
+    position: absolute;
+    right: -168px;
+}
